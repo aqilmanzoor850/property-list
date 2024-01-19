@@ -1,0 +1,22 @@
+[
+  {
+    "propertyName": "asda",
+    "addressLine": "sd",
+    "country": "USA",
+    "city": "New York",
+    "postalCode": "asd",
+    "closeDate": "4212-03-22",
+    "typeOfRate": "fixed",
+    "capitalization": "monthly"
+  },
+  {
+    "typeOfRate": "fixed",
+    "capitalization": "monthly",
+    "propertyName": "asd",
+    "addressLine": "asd",
+    "country": "Canada",
+    "city": "New York",
+    "postalCode": "1223",
+    "closeDate": "2232-03-12"
+  }
+]
