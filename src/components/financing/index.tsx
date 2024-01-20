@@ -130,7 +130,7 @@ const FinancingForm: FunctionComponent = ({}) => {
           <label className="text-gray-700">Type of Rate</label>
           <div className="flex">
             <button
-              className={`md:px-20 px-4 py-2${
+              className={`md:px-20 px-4 py-2 ${
                 stepData.typeOfRate === "fixed" || !stepData.typeOfRate
                   ? "bg-gray-300"
                   : "bg-white"
