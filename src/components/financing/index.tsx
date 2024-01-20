@@ -130,7 +130,7 @@ const FinancingForm: FunctionComponent = ({}) => {
           <label className="text-gray-700">Type of Rate</label>
           <div className="flex">
             <button
-              className={`px-20 py-2 ${
+              className={`md:px-20 px-4 py-2${
                 stepData.typeOfRate === "fixed" || !stepData.typeOfRate
                   ? "bg-gray-300"
                   : "bg-white"
@@ -140,7 +140,7 @@ const FinancingForm: FunctionComponent = ({}) => {
               Fixed
             </button>
             <button
-              className={`px-20 py-2 ${
+              className={`md:px-20 px-4 py-2 ${
                 stepData.typeOfRate === "variable" ? "bg-gray-300" : "bg-white"
               } border rounded-r-lg`}
               onClick={(e) => handleTypeOfRateToggle(e, "typeOfRate", "variable")}
@@ -166,7 +166,7 @@ const FinancingForm: FunctionComponent = ({}) => {
           <label className="text-gray-700">Capitalization</label>
           <div className="flex">
             <button
-              className={`px-20 py-2 ${
+              className={`md:px-20 px-4 py-2 ${
                 stepData.capitalization === "monthly" ||
                 !stepData.capitalization
                   ? "bg-gray-300"
@@ -179,7 +179,7 @@ const FinancingForm: FunctionComponent = ({}) => {
               Monthly
             </button>
             <button
-              className={`px-20 py-2 ${
+              className={`md:px-20 px-4 py-2 ${
                 stepData.capitalization === "semi-annual"
                   ? "bg-gray-300"
                   : "bg-white"
