@@ -64,12 +64,11 @@ export const Container = () => {
   const handleSubmit = async (event: FormEvent) => {
     event.preventDefault();
     if (!validateStepData()) {
-        console.log('enenenne')
       return;
     }
 
     try {
-      const response = await fetch("/api/submit", {
+      const response = await fetch("/api/listing", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -83,7 +82,6 @@ export const Container = () => {
 
       const data = await response.json();
       setStep(activeStep + 1);
-      console.log(data);
     } catch (error) {
       console.error("Failed to submit:", error);
       toast.error("Failed to submit data.");
