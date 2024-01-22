@@ -6,7 +6,7 @@ export const ViewList = () => {
   const [list, setList] = useState([]);
 
   const fetchData = useCallback(async () => {
-    const response = await fetch("/api/data", {
+    const response = await fetch("/api/submit", {
       method: "GET",
     });
 
